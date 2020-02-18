@@ -1,6 +1,6 @@
 package monopoly;
 
-public abstract class Properties extends spaces {
+public abstract class Properties extends Space {
 	protected int cost;
 	protected int multiplier;
 	protected int fee;

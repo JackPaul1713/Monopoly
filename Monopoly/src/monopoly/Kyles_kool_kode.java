@@ -15,11 +15,23 @@ public class Kyles_kool_kode
 		
 			LayeredPaneExample panel = new  LayeredPaneExample();  
 		      panel.setVisible(true); 
-			// this is a test
 			
 			
 		}
-	
+		public static int[] rollDice(int numberOfDice, int numberOfSides)
+		{
+		int counter = 0;
+		boolean rolling = true;
+		int theTotal = 0;
+		int results[] = new int[numberOfDice + 1];
+		for(int i = 0; i< numberOfDice; i ++)
+		{
+		int randomNumber = (int) ( (Math.random()) * numberOfSides) + 1;
+		results[counter] = randomNumber;
+		theTotal = theTotal + randomNumber;
+		}
+		return results;
+		}
 	
 	
 	
